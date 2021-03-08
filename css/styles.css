@@ -1,5 +1,7 @@
 html{
 	margin: 0;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
 }
 .navbar{
 	overflow: hidden;
@@ -34,4 +36,39 @@ html{
 }
 .intro-info{
 	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.intro-info h1{
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+	text-align: center;
+	width: 80%;
+	margin-bottom: 4%;
+}
+.intro-info h5{
+	display: flex;
+	font-size: 18px;
+	justify-content: center;
+	text-align: center;
+	width: 90%;
+	margin-top: 4%;
+	color: hsl(0, 0%, 75%);
+}
+.intro-info button{
+	display: flex;
+	font-size: 18px;
+	justify-content: center;
+	text-align: center;
+	width: 45%;
+	height: 15%;
+	color: white;
+	background-color: hsl(180, 66%, 49%);
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	align-items: center;
+	border: none;
 }
