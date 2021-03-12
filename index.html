@@ -46,11 +46,12 @@
 
     <section id="link-box">
       <div class="shortener-box">
-        <form>
-          <input type="text" name="url-link" placeholder="Shorten a link here...">
-          <button type="submit" name="submit">Shorten It!</button>
+        <form action="/index.html" method="POST">
+          <input id="urlInput" type="text" name="shortlink" placeholder="Shorten a link here...">
+          <button type="submit">Shorten It!</button>
         </form>
       </div>
+      <div class="new-box"></div>
     </section>
 
 
