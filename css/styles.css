@@ -195,3 +195,50 @@ body{
 	text-align: center;
 	font-size: 14px;
 }
+
+/* dynamic boxes */
+#newUrl{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+	flex-flow: column wrap;
+
+}
+.important{
+  background-color: white;
+  height: 10rem;
+  width: 80%;
+	margin: 5px;
+	margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.file1{
+  height: 20%;
+  width: 100%;
+  margin: 2%;
+  border-bottom: solid 1px black;
+	font-size: 20px;
+	overflow-wrap:break-word;
+}
+.file2{
+  height: 20%;
+  width: 100%;
+  margin: 2%;
+  color: hsl(180, 66%, 49%);
+  font-size: 20px;
+}
+.file3{
+  background-color: hsl(180, 66%, 49%);
+  height: 25%;
+  width: 100%;
+  margin: 2.5%;
+  color: white;
+  -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+  font-size: 18px;
+}

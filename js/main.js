@@ -29,15 +29,34 @@ form.addEventListener('submit', handleForm);
 
 
 //Fetches API and cheks that something written on form
-function getInputValue() {
-	let input = document.getElementById('urlInput').value
+// function getInputValue() {
+// 	let input = document.getElementById('urlInput').value
 
-	if(input === ""){
-		alert("Hey! You need to write something!")
-	}else{
-		fetch(`https://api.shrtco.de/v2/shorten?url=${input}`, { mode: 'cors' })
-			.then(response => response.json())
-			.then(response => console.log(response.result.short_link))
-	}
+// 	if(input === ""){
+// 		alert("Hey! You need to write something!")
+// 	}else{
+// 		fetch(`https://api.shrtco.de/v2/shorten?url=${input}`, { mode: 'cors' })
+// 			.then(response => response.json())
+// 			.then(response => console.log(response.result.short_link))
+// 	}
+// }
+function myFunction() {
 
 }
+
+
+async function getInputValue() {
+	let input = document.getElementById('urlInput').value
+
+	const response = await
+		fetch(`https://api.shrtco.de/v2/shorten?url=${input}`, { mode: 'cors' })
+			.then(response => response.json())
+			.then(response => url = response.result.short_link)
+
+	$("#submit").click(function () {
+		$(`<div class="important"><div class="file1">${input}</div><div class="file2">${url}</div><button class="file3">Copy</button></div>`).appendTo('#newUrl');
+	});
+
+}
+
+
