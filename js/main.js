@@ -40,23 +40,27 @@ form.addEventListener('submit', handleForm);
 // 			.then(response => console.log(response.result.short_link))
 // 	}
 // }
-function myFunction() {
+// function myFunction() {
 
-}
-
-
+// }
 async function getInputValue() {
 	let input = document.getElementById('urlInput').value
 
-	const response = await
-		fetch(`https://api.shrtco.de/v2/shorten?url=${input}`, { mode: 'cors' })
-			.then(response => response.json())
-			.then(response => url = response.result.short_link)
+	let path = `https://api.shrtco.de/v2/shorten?url=${input}`
 
-	$("#submit").click(function () {
-		$(`<div class="important"><div class="file1">${input}</div><div class="file2">${url}</div><button class="file3">Copy</button></div>`).appendTo('#newUrl');
-	});
+	createNewBox(await getData(path));
 
 }
 
 
+async function getData(path) {
+	const response = await fetch(path, { mode: 'cors' })
+			.then(response => response.json())
+			return urlObj = response.result;
+}
+
+function createNewBox(){
+	$("#submit").click(function () {
+		$(`<div class="important"><div class="file1">${urlObj.original_link.slice(0, 27)}</div><div class="file2">${urlObj.short_link}</div><button class="file3">Copy</button></div>`).appendTo('#newUrl');
+	});
+}
