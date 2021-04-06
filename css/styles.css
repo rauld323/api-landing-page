@@ -17,12 +17,10 @@ body{
 	background-color: transparent;
 }
 
-.navbar #siteLinks{
-	display: none;
-}
 #siteLinks{
 	background-color: hsl(257, 27%, 26%);
 	position: fixed;
+	display: none;
   z-index: 1;
 	height: 70vh;
 	width: 90%;
@@ -32,6 +30,7 @@ body{
 #siteLinks a{
 	color: white;
 	font-style: none;
+	text-decoration: none;
 }
 .navbar a.icon {
   display: block;
@@ -465,6 +464,36 @@ body{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 769px) and (max-width: 992px) {
+
+	.navbar{
+	display: flex;
+	flex-flow: row;
+	justify-items: space-between
+	}
+	.navbar a.icon{
+		display: none;
+	}
+	#siteLinks{
+		background-color: transparent;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+		height: 20px;
+		width: 35%;
+		margin-left: 18%;
+	}
+	#siteLinks2{
+		background-color: transparent;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+		height: 20px;
+		width: 50%;
+		margin-left: 66%;
+	}
+	#siteLinks a{
+	color: hsl(257, 27%, 26%);
+}
 	.intro {
     display: flex;
 		flex-flow: row;
@@ -549,6 +578,36 @@ body{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 993px) and (max-width: 1440px){
+
+		.navbar{
+	display: flex;
+	flex-flow: row;
+	justify-items: space-between
+	}
+	.navbar a.icon{
+		display: none;
+	}
+	#siteLinks{
+		background-color: transparent;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+		height: 20px;
+		width: 36%;
+		margin-left: 15%;
+	}
+	#siteLinks2{
+		background-color: transparent;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+		height: 20px;
+		width: 35%;
+		margin-left: 65%;
+	}
+	#siteLinks a{
+	color: hsl(257, 27%, 26%);
+	}
 	.intro {
     display: flex;
 		flex-flow: row;
