@@ -141,7 +141,7 @@ html{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	background-color:hsl(0, 0%, 75%);
+	background-color:#EBEDF2;
 	margin-top: 75px;
 }
 .info-boxes{
@@ -361,7 +361,7 @@ html{
 		margin-left: 15%;
 }
 	.text1{
-		height: 17%;
+		height: 25%;
 	}
 	.start-button {
     margin-top: 13%;
@@ -409,10 +409,6 @@ html{
 }
 	.intro-info button{
 	margin-right: 39%;
-	}
-	.text1{
-		height: 12%;
-    width: 45%;
 	}
 
 	.circle1, .circle2, .circle3 {
@@ -501,13 +497,19 @@ html{
     justify-content: space-around;
     flex-flow: row wrap;
 	}
+	.circle1, .circle2, .circle3{
+		margin-top: -70px;
+	}
 	.text1{
-		width: 7%;
+		width: 28%;
 		margin-bottom: 5%;
+		padding: 4%;
+		height: 90%;
 	}
 	.text1 h1{
 	text-align: center;
 	font-size: 20px;
+	margin-top: 25px;
 	}
 .text1 p{
 	text-align: center;
@@ -620,7 +622,6 @@ html{
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    margin-bottom: -300px;
 }
 .important {
 		flex-flow: row;
@@ -649,14 +650,24 @@ html{
 	margin-top: 3%;
 	margin-left: -2%;
 }
+	.circle1, .circle2, .circle3{
+		margin-top: -80px;
+	}
 	.text1{
-		height: 12%;
-    width: 7%;
+		width: 28%;
+		margin-bottom: 5%;
+		padding: 4%;
+		height: 90%;
 	}
-	.circle1, .circle2, .circle3 {
-		margin-top: -135px;
-		margin-right: 10%;
+	.text1 h1{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 25px;
 	}
+.text1 p{
+	text-align: center;
+	font-size: 14px;
+}
 	.start-logo{
 	background-image: url("/images/bg-boost-desktop.svg");
 	background-repeat: no-repeat;
