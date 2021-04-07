@@ -1,49 +1,30 @@
 *{
 	outline: none;
+	margin:0;
+	padding: 0;
 }
 html{
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
 }
-body{
-	margin:0;
-}
+
 .navbar{
 	overflow: hidden;
 	position: fixed;
-	margin: 4%;
+	margin: 2%;
 	z-index: 1;
 	width: 90%;
 	background-color: transparent;
 }
-
-#siteLinks{
-	background-color: hsl(257, 27%, 26%);
-	position: fixed;
-	display: none;
-  z-index: 1;
-	height: 70vh;
-	width: 90%;
-	display: flex;
-	flex-flow: column wrap;
-}
-#siteLinks a{
-	color: white;
-	font-style: none;
-	text-decoration: none;
-}
-.navbar a.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-	top: 0;
-	height: 50%;
-}
-.fa{
-	font-size: 1.5rem;
-	color: grey;
-}
-
+#siteLinks2{
+		background-color: transparent;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+		height: 20px;
+		width: 50%;
+		margin-left: 66%;
+	}
 .intro{
 	display: flex;
 	flex-flow: row wrap;
@@ -154,7 +135,6 @@ body{
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
 }
-
 
 
 #info{
@@ -349,7 +329,10 @@ body{
 	flex-flow: column wrap;
 	justify-content: center;
 }
-.foot-2 h1, h3{
+.foot-2  h3{
+	color: white;
+}
+.foot-2 h1{
 	color: white;
 }
 .foot-2 a {
@@ -465,25 +448,7 @@ body{
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 769px) and (max-width: 992px) {
 
-	.navbar{
-	display: flex;
-	flex-flow: row;
-	justify-items: space-between
-	}
-	.navbar a.icon{
-		display: none;
-	}
-	#siteLinks{
-		background-color: transparent;
-		display: flex;
-		flex-flow: row;
-		justify-content: space-around;
-		height: 20px;
-		width: 35%;
-		margin-left: 18%;
-	}
 	#siteLinks2{
-		background-color: transparent;
 		display: flex;
 		flex-flow: row;
 		justify-content: space-around;
@@ -494,6 +459,10 @@ body{
 	#siteLinks a{
 	color: hsl(257, 27%, 26%);
 }
+	.signUp{
+		background-color: blue;
+	}
+
 	.intro {
     display: flex;
 		flex-flow: row;
@@ -579,23 +548,23 @@ body{
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 993px) and (max-width: 1440px){
 
-		.navbar{
-	display: flex;
-	flex-flow: row;
-	justify-items: space-between
+
+	.signUp{
+		background-color: hsl(180, 66%, 49%);
+		color: white;
+		border-radius: 20px;
+    border-style: none;
+    height: 44px;
+    width: 120px;
 	}
-	.navbar a.icon{
-		display: none;
+	.login{
+		background-color: white;
+		border-radius: 20px;
+    border-style: none;
+    height: 44px;
+    width: 120px;
 	}
-	#siteLinks{
-		background-color: transparent;
-		display: flex;
-		flex-flow: row;
-		justify-content: space-around;
-		height: 20px;
-		width: 36%;
-		margin-left: 15%;
-	}
+
 	#siteLinks2{
 		background-color: transparent;
 		display: flex;
@@ -605,9 +574,8 @@ body{
 		width: 35%;
 		margin-left: 65%;
 	}
-	#siteLinks a{
-	color: hsl(257, 27%, 26%);
-	}
+
+
 	.intro {
     display: flex;
 		flex-flow: row;
@@ -615,7 +583,7 @@ body{
 	}
 	.work-img {
 		order: 2;
-		margin-top: 12%;
+		margin-top: 8%;
 	}
 	.work-img img {
     width: 105%;

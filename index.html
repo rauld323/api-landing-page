@@ -8,28 +8,42 @@
   <link rel="stylesheet" href="/css/styles.css" rel="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
 
   <title>Shortly URL shortening API Challenge</title>
 
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-        <img src="/images/logo.svg" alt="logo">
-        <div id="siteLinks">
-          <a href="#feature">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#resources">Resources</a>
 
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img src="/images/logo.svg" alt="logo"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Resources</a>
+          </li>
+        </ul>
+        <div id="SiteLinks">
+          <button class="login" href="#login">Login</button>
+          <button class="signUp" href="#signup">Sign Up!</button>
         </div>
-        <div id="siteLinks2">
-          <a href="#login">Login</a>
-          <a href="#signup">Sign Up!</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+
+      </div>
     </nav>
   </header>
   <main>
@@ -62,16 +76,50 @@
             advanced statistics dashboard.</h4>
         </div>
 
-        <div class="service-boxes">
+        <div class="column">
+
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="circle1"></div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="circle2"></div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="circle3"></div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="service-boxes">
 
             <div class="text1">
-              <div class="circle1"></div>
+
               <h1>Brand Recognition</h1>
               <p>Boost your brand recognition with each click. Generic links don’t
                 mean a thing. Branded links help instil confidence in your content.</p>
             </div>
             <div class="text1">
-              <div class="circle2"></div>
+
 
                 <h1>Brand Recognition</h1>
                 <p>Boost your brand recognition with each click. Generic links don’t
@@ -80,13 +128,13 @@
             </div>
 
             <div class="text1">
-              <div class="circle3"></div>
+
               <h1>Brand Recognition</h1>
               <p>Boost your brand recognition with each click. Generic links don’t
                 mean a thing. Branded links help instil confidence in your content.</p>
             </div>
         </div>
-      </div>
+      </div> -->
 
 
       </section>
@@ -142,8 +190,11 @@
     </div>
   </footer>
 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 </body>
 </html>
 
