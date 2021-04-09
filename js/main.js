@@ -50,6 +50,15 @@ async function getData(path) {
 
 function createNewBox(){
 	$("#submit").click(function () {
-		$(`<div class="important"><div class="file1">${urlObj.original_link.slice(0, 27)}</div><div class="file2">${urlObj.short_link}</div><button class="file3">Copy</button></div>`).appendTo('#newUrl');
+		$(`<div class="important"><div class="file1">${urlObj.original_link.slice(0, 27)}</div><div class="file2" id="file2">${urlObj.short_link}</div><button class="file3" onclick="copyToClipboard(this)">Copy</button></div>`).appendTo('#newUrl');
 	});
+
+}
+
+function copyToClipboard(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val($(element).parents('.important').find('.file2').text()).select();
+	document.execCommand("copy");
+	$temp.remove();
 }
