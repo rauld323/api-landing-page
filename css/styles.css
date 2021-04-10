@@ -10,12 +10,44 @@ html{
 
 .navbar{
 	overflow: hidden;
-	position: fixed;
+	position: fixed ;
 	margin: 2%;
-	z-index: 1;
+	z-index: 2;
 	width: 90%;
 	background-color: transparent;
 }
+.collapse{
+	background-color: hsl(257, 27%, 26%);
+	height: 80%;
+}
+.collapse.show {
+    height: 60vh;
+}
+.navbar-nav li{
+	display: flex;
+	justify-content: center;
+}
+.nav-link{
+	color: white !important;
+}
+#SiteLinks{
+	display: flex;
+	flex-flow: column wrap;
+	width: 70%;
+	margin-left: 15%;
+}
+.login{
+		background-color: transparent;
+		color: white;
+		border-radius: 20px;
+    border-style: none;
+}
+.signUp{
+		background-color: hsl(180, 66%, 49%);
+		color: white;
+		border-radius: 20px;
+    border-style: none;
+	}
 #siteLinks2{
 		background-color: transparent;
 		display: flex;
@@ -134,8 +166,12 @@ html{
 	border-radius: 7px;
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
+	outline:0;
 }
-
+.shortener-box form button:active{
+	background-color:hsl(257, 27%, 26%);
+	color: hsl(180, 66%, 49%);
+}
 
 #info{
 	display: flex;
@@ -219,6 +255,10 @@ html{
 	-moz-border-radius: 7px;
 	border-radius: 7px;
   font-size: 18px;
+}
+.file3:active{
+	background-color:hsl(257, 27%, 26%);
+	color: hsl(180, 66%, 49%);
 }
 
 .service-boxes{
@@ -549,8 +589,16 @@ html{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 993px) and (max-width: 1440px){
-
-
+		.collapse{
+		background-color: transparent;
+		height: 80%;
+	}
+	.collapse.show {
+			height: 0vh;
+	}
+	.nav-link{
+	color: hsl(257, 27%, 26%) !important;
+}
 	.signUp{
 		background-color: hsl(180, 66%, 49%);
 		color: white;
